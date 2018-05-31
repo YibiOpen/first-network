@@ -10,6 +10,7 @@ volumes:
 
 networks:
   byfn:
+  
 services:
   ca1:
     image: hyperledger/fabric-ca:$IMAGE_TAG
