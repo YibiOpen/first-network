@@ -1,0 +1,20 @@
+# Copyright IBM Corp. All Rights Reserved.
+#
+# SPDX-License-Identifier: Apache-2.0
+#
+
+version: '2'
+
+volumes:
+  orderer.arbi.com:
+
+networks:
+  byfn:
+services:
+  orderer.arbi.com:
+    extends:
+      file:   base/docker-compose-base.yaml
+      service: orderer.arbi.com
+    container_name: orderer.arbi.com
+    networks:
+      - byfn
